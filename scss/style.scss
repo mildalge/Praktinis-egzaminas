@@ -1,29 +1,54 @@
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400&family=Montserrat:wght@400;500;600;800&display=swap');
+
+@import 'variables';
+@import 'mixins'
+@import 'reset';
+
+
+header{
+  width: 1400px;
+  height: 72px;
+  background:$black;
+  width: 100%;
+  position: fixed;
+ 
+  .navbar {
+  @include flex-between;
+    .logo {
+      display: flex;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .nav{
+      display: flex;
+      gap:40px;
+    }
+
+    img{
+      height: 52px;
+      width: 119px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
 }
 
-.img {
-  background: url(../images/img-1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 150px;
-  width: 75px;
-  animation: spin 5s infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(2);
-  }
-
-  100% {
-    transform: rotate(360deg) scale(1)
-  }
-}
+// @media (max-width: 768px){
+//   header {
+//     height: auto;
+//     flex-direction: column;
+//     text-align: center;
+//     // gap: 10px;
+//     // padding: 15px;
+    
+//     nav {
+//       flex-direction: column;
+//     }
+//   }
+// }
