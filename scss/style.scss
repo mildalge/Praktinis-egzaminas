@@ -161,6 +161,8 @@ header{
       h4{
         color:#333333;
         padding-bottom: 8px;
+        font-size: 24px;
+        font-weight: 600;
       }
 
       p{
@@ -186,14 +188,53 @@ header{
 
 #tabs{
   background: url(../images/img-1.png);
-  background-size: center;
-  background-position: coverr;
+  background-size: cover;
+  background-position: center;
   height: 711px;
-  // width: 1400px;
+  width: 1400px;
   // opacity: 0.63;
   width: 100%;  
-  // padding: 0;
-  // margin: auto;
-  color: $white;
-  position: relative;
+  padding: 0;
+  display: flex;
+  margin: auto;
+
+  .container{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:auto;
+    // z-index: 1;
+
+    .squares{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      width: 100px;
+      height: 366px;
+
+      #square{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        background: red;
+      }
+    }
+
+    .text{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      width: 517px;
+      height: 366px;
+      color: $white;
+    }
+
+    // .fotos{
+    //   width: 362px;
+    //   height: 366px;
+    //   display: flex;
+    // }
+  }
+  
 }
