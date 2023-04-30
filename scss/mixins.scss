@@ -6,4 +6,12 @@
     margin:auto;
   }
 
+  @mixin h1 {
+      color: $white;
+      font-size: 36px;
+      font-weight: 600;
+      padding-bottom: 22px;
+      line-height: 1.3em;
+  }
+
  
