@@ -11,8 +11,9 @@ header{
   height: 72px;
   background:$black;
   width: 100%;
-  position: fixed;
-  z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 999;
  
   .navbar {
   @include flex-between;
@@ -44,15 +45,16 @@ header{
   background: url(../images/hero.png);
   background-size: center;
   background-position: center;
-  height: 711px;
+  height: 639px;
   // width: 1400px;
-  padding-top: 72px;
+  // padding-top: 72px;
   // opacity: 0.63;
   // width: 100%;  
   display: flex;
   margin: auto;
   color: $white;
   position: relative;
+  
 
   &::before{
     content: "";
@@ -172,7 +174,7 @@ header{
     .icons {
       display: flex;
       width: 60%;
-      gap: 120px;
+      gap: 116px;
   
       a {
         color: $pink;
@@ -300,7 +302,7 @@ header{
   background: $black;
     height: 596px;
   // width: 1400px;
-  padding-top: 72px;
+  // padding-top: 72px;
   // opacity: 0.63;
   // width: 100%;  
   display: flex;
@@ -312,10 +314,10 @@ header{
     height: 639px;
     width: 1100px;
     display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
+    justify-content: center;
+    align-items:center;
     margin:auto;
-    gap: 200px;
+    gap: 168px;
     // z-index: 1;
 
     .logo {
@@ -332,11 +334,163 @@ header{
     .loginfo{
       display: flex;
       flex-direction: column;
+      gap:20px;
+
+      h2{
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        // padding-bottom: 22px;
+        line-height: 1.4em;
+        text-align: left;
+      }
+
+      hr{
+        border: 1.5px solid $pink;
+        width: 200px;
+      }
+
+      p {
+        color: $white;
+        font-size: 16px;
+        line-height: 1.2em;
+        text-align: justify;
+      }
+
+      .title{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+
+        .title1{
+          display: flex;
+          justify-content: center;    
+          align-items: center;
+          gap:20px;
+          i{
+            color: $white;
+            background: $pink;
+            padding: 10px;
+            border-radius: 200px;
+            font-size: 20px;
+          }
+
+          
+        }
+
+        .title2{
+          display: flex;
+          justify-content: center;    
+          align-items: center;
+          gap:20px;
+                    
+          i{
+            color: $white;
+            background: $pink;
+            padding: 10px;
+            border-radius: 200px;
+            font-size: 20px;
+          }
+        }
+      }
     }
-
-
-
+}
 
 }
+
+#awesome{
+  background: $white;
+  height: 592px;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .awesome-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap:26px;
+
+    h1{
+      color: $black2;
+      font-size: 44px;
+      font-weight: 600;
+      // padding-bottom: 22px;
+      line-height: 1.3em;
+    }
+
+    hr{
+      border: 1.5px solid $pink;
+      width: 64px;
+    }
+
+    p{
+      color: $grey;
+    }
+  }
+  .items{
+  width: 1400px;
+  height: 200px;
+  background: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:50px;
+
+  .font {
+    color: $pink;
+    font-size: 3em;
+    padding: 10px;
+  }
+
+  h3 {
+    padding: 6px;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 50px 0 50px 0;
+  }
+
+  .item1{
+    height: 194px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 160%;    
+  }
+  .item2{
+    height: 194px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 160%;   
+  }
+  .item3{
+    height: 174px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 160%;   
+  }
+
+  .font{
+    color: $pink;
+    background: $white;
+    // padding: 10px;
+    border-radius: 400px;
+    border: 1px solid $pink;
+    font-size: 20px;
+  }
+  }
 
 }
