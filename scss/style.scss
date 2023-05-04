@@ -60,7 +60,7 @@ header{
     content: "";
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 99%;
     background: #1c1c1c75;
 
   }
@@ -125,19 +125,110 @@ header{
         width: 135px;
         height: 42px;
       }
-      
     }
   
-   .table{
+    .table{
       width: 360px;
-      height: 424.88px;
-      background-color:$pink;
+      height: 490px;
+      background-color:$white;
+      border-radius: 5px;
       display: flex;
-      margin-top: 65px;
-      // margin: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:36px;
+      margin-top: 60px;
+      padding: 0px;
+
+      .top h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $grey3;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5em;
+        background-color: $greylight;
+        width: 360px;
+        height: 56px;
+        border-radius: 5px;
+
+        span{
+          color: $pink;
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+      }
+
+      .details p{
+        color: $black;
+        font-size: 16px;
+        font-weight: 600;    
+        width: 260px;
+        height: 22px;
+        // padding-top: 20px;
+        // padding-bottom: 24px;
+        // margin-left: 100px;
+        // background-color: $grey;
+      
+        
+      }
+      
+      #input{
+      width: 260px;
+      height: 22px;
+      border: none;
+      border-bottom: 1.1px solid $grey2;
+      outline: none;
+      color: $greyhell;
+      opacity: 0.6;
+      font-size: 15px;
+      text-indent: 10px;
+      padding-bottom: 8px;
+      }
+
+      .form__group{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+        input[type="radio"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $green;
+      border-radius: 50%;
+      background-clip: content-box;
+      padding: 3px;
+      }
+    
+        input[type="radio"]:checked {
+      background-color: $green;
+      }
+
+      // .form__radio-label {
+      //   font-size: 16px;
+      //   cursor: pointer;
+      //   position:absolute;
+      //   padding-left: 35px;
+      //   color:black;
+      // }
+
+      button{
+    background: $green;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 360px;
+    height: 56px;
+    
+      }
     }
   }
 }
+
 
 #social{
   height: 105px;
@@ -770,20 +861,26 @@ header{
       display: flex;
       flex-direction: row;
       gap: 20px;
+
+      .form__radio-label{
+        color: $black;
       }
+
       input[type="radio"] {
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border: 2px solid $green;
-    border-radius: 50%;
-    background-clip: content-box;
-    padding: 3px;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $green;
+        border-radius: 50%;
+        background-clip: content-box;
+        padding: 3px;
       }
   
       input[type="radio"]:checked {
-    background-color: $green;
+        background-color: $green;
       }
+      }
+
 
       button{
       background: $green;
