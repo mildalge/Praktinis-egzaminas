@@ -18,3 +18,41 @@
 @import 'contacts';
 
 @import 'footer';
+
+#last{
+    height: 40px;
+    background: $white;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 8px;
+
+    input,
+    label {
+        cursor: pointer;
+    }
+
+    label {
+    margin-top: 0.1em;
+    font-weight: bold;
+    }
+
+    input[type="radio"] {
+	    appearance: none;
+	    width: 20px;
+	    height: 20px;
+	    border: 2px solid $green;
+	    border-radius: 50%;
+	    background-clip: content-box;
+	    padding: 3px;
+        margin-right: 6px;
+    }
+
+    input[type="radio"]:checked {
+	    background-color: $green;
+    }
+
+
+}
+
+

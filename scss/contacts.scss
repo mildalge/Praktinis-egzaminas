@@ -67,6 +67,10 @@
           color: $black;
         }
   
+        input,
+        label {
+            cursor: pointer;
+        }
         input[type="radio"] {
           appearance: none;
           width: 18px;
