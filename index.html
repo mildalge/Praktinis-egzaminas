@@ -278,7 +278,37 @@
           <input id="input" type="text" placeholder="First name" autocomplete="off"> 
           <input id="input" type="text" placeholder="Last name" autocomplete="off"> 
           <input id="input" type="text" placeholder="Phone number" autocomplete="off"> 
-          <p>personal// <span>company</span></p>
+
+
+          <div class="form__group">
+          
+            <div class="form__radio-group">
+              <input
+                type="radio"
+                class="form__radio-input"
+                id="small"
+                name="size"
+              />
+              <label for="small" class="form__radio-label">
+                <span class="form__radio-button"></span>
+               PERSONAL
+              </label>
+            </div>
+
+            <div class="form__radio-group">
+              <input
+                type="radio"
+                class="form__radio-input"
+                id="large"
+                name="size"
+              />
+              <label for="large" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                COMPANY
+              </label>
+            </div>
+
+          </div>
 
           <button>SEND</button>
         </div>
