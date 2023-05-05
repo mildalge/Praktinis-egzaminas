@@ -44,3 +44,22 @@
       }
     }
   }
+
+  @media (max-width:600px){
+    #social{
+      height: 50px;
+      width: 320px;
+      
+      .container{
+      .media {
+          display: none;
+      }
+
+      .icons{
+        @include media;
+        flex-direction: row;
+        gap: 40px;
+      }
+    }
+  }
+}
