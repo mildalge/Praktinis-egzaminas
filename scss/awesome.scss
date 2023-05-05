@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    // margin-bottom: 40px;
     gap:26px;
 
     h1{
@@ -39,9 +38,7 @@
   flex-direction: row;
   justify-content: space-around;
   gap:50px;
-  // margin-bottom: 40px;
-
-
+ 
   .font {
     color: $pink;
     font-size: 3em;
@@ -100,7 +97,6 @@
     align-items: center;
     line-height: 160%;   
   }
-
   .font{
     border-radius: 50%;
     border: 1px solid $pink;
@@ -110,5 +106,77 @@
     padding: 16px;
     font-size: 20px;
   }
+  }
+}
+
+@media (max-width:600px){
+  #awesome {
+    width: 99.9%;
+    height: 620px;
+
+    .awesome-info{
+      width: 90%;
+      gap: 16px;
+      h1{
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;  
+      }
+
+      p{
+        text-align: center;
+        vertical-align: middle;  
+      }
+
+      h3{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      vertical-align: middle;  
+      font-size: 14px;
+      }
+    }
+
+    .items{
+      flex-direction: column;
+      gap:16px;
+      height: 420px;
+      width: 90%;
+
+      h3 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle; 
+      }
+
+      .font{
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .item1{
+        width: 100%;
+        height: 150px;
+        line-height: 120%;  
+        .font{
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+      .item2{
+        width: 100%;
+        height: 150px;
+        line-height: 120%;  
+      }
+
+      .item3{
+        width: 100%;
+        height: 150px;
+        line-height: 120%;  
+      }
+    }
   }
 }

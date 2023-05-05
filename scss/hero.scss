@@ -194,6 +194,7 @@
   @media (max-width:600px){
     #hero {
       width: 99.9%;
+      height: 600px;
         .container {
           width: 320px;
           // height: 900px;
@@ -209,29 +210,16 @@
             justify-content: center;
             width: 300px;
             margin-top: 0px;
-          
-            // .logo {
-            //   display: flex;
-            //   align-items: center;
-            //   justify-content: center;
-            //   // padding-top: 10px;
-            //   // padding-bottom: 30px;
-      
-            // img{
-            //     width: 150px;
-            //     height: 50px;
-            //   }
-            // }
-          
-            h1{
-              
-              color: $white;
+            
+          h1{
               font-size: 20px;
-              font-weight: 600;
-              padding-bottom: 22px;
-              line-height: 1.3em;
+              text-align: center;
+              vertical-align: middle;  
             }
-    
+          h3{
+            text-align: center;
+            vertical-align: middle;  
+          }
           }
   
           .table{

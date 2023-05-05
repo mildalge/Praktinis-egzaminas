@@ -4,7 +4,6 @@
     background-position: center;
     height: 711px;
     width: 1400px;
-    // opacity: 0.63;
     width: 100%;  
     padding: 0;
     display: flex;
@@ -16,7 +15,6 @@
       justify-content: space-between;
       align-items:center;
       margin:auto;
-      // z-index: 1;
   
       .squares{
         display: flex;
@@ -99,32 +97,43 @@
 
 @media (max-width:600px){
     #tabs{
-      height: 860px;
+      height: 880px;
       width: 99.9%;
-      // margin: auto;
+      margin: auto;
       
       .container{
         @include media;
-
+        width: 320px;
         .squares{
           flex-direction: row;
-          gap:6px;
+          text-align: center;
+          justify-content: center;
+          gap:12px;
           height: 100px;
           width: 90%;
+          margin-top: 20px;
 
           #square{
-            height: 90px;
-            width: 90px;
+            height: 80px;
+            width: 80px;
             }
         }
 
         .text{
           @include media;
           width: 90%;
-          gap: 6px;
+          gap: 10px;
   
          h1{
           font-size: 20px;
+          text-align: center;
+          vertical-align: middle; 
+          }
+
+          p{
+            font-size: 14px;
+            text-align: center;
+            vertical-align: middle; 
           }
          }
 
