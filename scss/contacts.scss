@@ -101,3 +101,37 @@
     }
     }
   }
+
+  @media (max-width:600px){
+    #contacts {
+      width: 99.9%;
+        .container {
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        
+          .contacts-info{
+            width: 300px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            gap:10px;
+            
+          h1{
+              font-size: 20px;
+              text-align: center;
+              vertical-align: middle;  
+            }
+          p{
+            text-align: center;
+            vertical-align: middle;  
+          }
+          }
+  
+          .table1{
+            width: 90%;
+          }
+        }
+      }
+  }

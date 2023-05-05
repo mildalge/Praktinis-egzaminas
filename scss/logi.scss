@@ -34,7 +34,6 @@
           color: $white;
           font-size: 30px;
           font-weight: 600;
-          // padding-bottom: 22px;
           line-height: 1.4em;
           text-align: left;
         }
@@ -61,6 +60,7 @@
             justify-content: center;    
             align-items: center;
             gap:20px;
+          
             i{
               color: $white;
               background: $pink;
@@ -87,9 +87,7 @@
         }
       }
   }
-  
   }
-
 
   @media (max-width:600px){
     #logi {

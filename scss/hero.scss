@@ -3,23 +3,17 @@
     background-size: center;
     background-position: center;
     height: 639px;
-    // width: 1400px;
-    // padding-top: 72px;
-    // opacity: 0.63;
-    // width: 100%;  
     display: flex;
     margin: auto;
     color: $white;
     position: relative;
     
-  
     &::before{
       content: "";
       position: absolute;
       width: 100%;
       height: 99%;
       background: #1c1c1c75;
-  
     }
   
     .container{
@@ -33,8 +27,6 @@
   
       .info{
         width: 651px;
-        // height: 424.88px;
-        // background-color:grey;
         display: flex;
         flex-direction: column;
         margin-top: 65px;
@@ -123,12 +115,6 @@
           font-weight: 600;    
           width: 260px;
           height: 22px;
-          // padding-top: 20px;
-          // padding-bottom: 24px;
-          // margin-left: 100px;
-          // background-color: $grey;
-        
-          
         }
         
         #input{
@@ -167,16 +153,8 @@
           input[type="radio"]:checked {
         background-color: $green;
         }
-  
-        // .form__radio-label {
-        //   font-size: 16px;
-        //   cursor: pointer;
-        //   position:absolute;
-        //   padding-left: 35px;
-        //   color:black;
-        // }
-  
-        button{
+ 
+      button{
       background: $green;
       border: none;
       border-radius: 5px;
@@ -185,7 +163,6 @@
       cursor: pointer;
       width: 360px;
       height: 56px;
-      
         }
       }
     }
@@ -197,7 +174,6 @@
       height: 600px;
         .container {
           width: 320px;
-          // height: 900px;
           display: flex;
           flex-direction: column;
           justify-content: center;

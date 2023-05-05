@@ -29,9 +29,33 @@ footer{
         width: 30%;
   
         p{
-          color:#86878B;
+          color:$grey;
           font-size: 14px;
         }
       }
     }
   }
+
+  @media (max-width:600px){
+    footer{
+      height: 35px;
+      width: 320px;
+      
+      .container{
+      .media {
+          display: none;
+      }
+
+      .icons{
+        @include media;
+        flex-direction: row;
+        gap: 30px;
+
+        a{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
