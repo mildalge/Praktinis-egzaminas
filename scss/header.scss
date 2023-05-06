@@ -8,6 +8,7 @@ header{
 
     .navbar {
     width: 100%;
+    background:$black;
     display: flex;
     justify-content: space-between;
 
@@ -75,6 +76,35 @@ header{
         display: none;
         color:$white;
       }
+    }
+
+    .side-nav{
+      display: flex;
+      height: 80px;
+      height: 20vh;
+      width: 100px;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(-110%);
+      transition: 0.3s;
+      background-color: $pink;
+    }
+
+    .side-nav .link{
+      display: block;
+      color:$white;
+      text-decoration: none;
+      height: 60px;
+      background-color: $pink;
+      margin-top: 8px;
+    }
+// JS naudojamos klases
+    .transformX{
+      transform: translateX(0%);
+    }
+
+    .rotateZ{
+      transform: rotateZ(-90deg);
     }
 
   }
