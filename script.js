@@ -1,6 +1,10 @@
 const burger = document.getElementById("burger")
 const sideNav = document.querySelector(".side-nav")
 const links = document.getElementsByClassName("link")
+const anchors = document.querySelectorAll("a")
+const sections = document.querySelectorAll("section")
+
+
 
 burger.addEventListener("click", function(){
     this.classList.toggle("rotateZ")
@@ -14,12 +18,29 @@ window.addEventListener("resize", function(){
     }
 })
 
-
 for(var link of links){
     link.addEventListener("click", function(){
+
         for(var link of links){
             link.classList.remove("active")
         }
         this.classList.add("active")
     })
 }
+
+window.addEventListener("scroll", function(){
+    let current
+   
+    for(let section of sections){
+        if(window.pageYOffset >= section.offsetTop -200){
+            current = section.getAttribute("id")
+        }
+    }
+
+    for(let anchor of anchors){
+        anchor.classList.remove("active")
+        if(anchor.getAttribute("href") == "#" + current){
+            anchor.classList.add("active")
+        }
+    }
+})
