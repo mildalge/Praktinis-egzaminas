@@ -13,3 +13,13 @@ window.addEventListener("resize", function(){
         sideNav.classList.remove("transformX")
     }
 })
+
+
+for(var link of links){
+    link.addEventListener("click", function(){
+        for(var link of links){
+            link.classList.remove("active")
+        }
+        this.classList.add("active")
+    })
+}
