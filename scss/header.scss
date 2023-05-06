@@ -10,10 +10,8 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
 
-    align-items: center;
+    max-width: 1100px;
     line-height: 70px;
     margin: auto;
     
@@ -71,21 +69,31 @@ header{
           background: $pink;
           color:$black;
         }
-        #burger {
-          display: none;
-        }
       } 
+
+      #burger {
+        display: none;
+        color:$white;
+      }
     }
+
   }
 
   @media(max-width:600px) {
     header{
+      .navbar{
+        justify-content: space-around;
+      
       .link {
         display: none;
       }
-
+      
       #burger {
         display: block;
+        color:$white;
+        font-size: 1.5em;
       }
+
+    } 
   } 
 }
