@@ -1,40 +1,22 @@
 #reviews{
-    background: $white;
-    height: 592px;;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 60px;
-  
-    .saying-info{
+  .swiper {
+    width: 500px;
+
+    .swiper-wrapper{
       display: flex;
-      flex-direction: column;
+      align-items: center;
+    }
+
+    .swiper-slide{
+      display: flex;
       justify-content: center;
       align-items: center;
-      gap:26px;
-  
-      h1{
-        color: $black2;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1.3em;
-        margin: auto;
-        margin-top: 40px;
+
+      .chat{
+        flex: none;
+        width: 300px;
+        height: 280px;
       }
-  
-      hr{
-        border: 1.5px solid $blue;
-        width: 64px;
-      }
-  
-    }
-  
-    .window{
-      height: 236px;
-      display: flex;
-      gap:100px;
-  
       .text {
         width: 273px;
         height: 147px;
@@ -86,10 +68,60 @@
       }
     }
     }
+
+    .swiper-pagination{
+      position:relative;
+      top:-20px;
+    }
+    .swiper-pagination-bullet{
+      background: $pink;
+      height: 8px;
+      width: 8px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+      color:$blue;
+    }
+  }
+    background: $white;
+    height: 592px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 60px;
+  
+    .saying-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:26px;
+  
+      h1{
+        color: $black2;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.3em;
+        margin: auto;
+        margin-top: 40px;
+      }
+  
+      hr{
+        border: 1.5px solid $blue;
+        width: 64px;
+      }
+  
+    }
   }
 
   @media (max-width:600px){
     #reviews{
+
+      .swiper{
+        width: 320px;
+      }
       width: 99.9%;
       height: auto;
       gap:40px;

@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="app/images/gulp.svg" />
     <link rel="stylesheet" href="app/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -269,59 +270,67 @@
     </section>
     
     <section id="reviews">
+      
       <div class="saying-info">
         <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
         <hr>
       </div>
 
-      <div class="window">
-        <div class="chat">
-            <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-            <div class="triangle"></div>
-            <div class="facename">
-              <div class="face">
-                <img src="app/png/avatar.png" alt="avatar"/>
-              </div>
-              <div class="name">
-                <h3>Jeremy H.</h3>
-                <p>Manager</p>
-              </div>
-            </div>
-            </div>
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><div class="chat">
+      <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+      <div class="triangle"></div>
+      <div class="facename">
+        <div class="face">
+          <img src="app/png/avatar.png" alt="avatar"/>
         </div>
-
-        <div class="chat">
-          <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-          <div class="triangle"></div>
-          <div class="facename">
-            <div class="face">
-              <img src="app/png/avatar.png" alt="avatar"/>
-            </div>
-            <div class="name">
-              <h3>John S.</h3>
-              <p>Freelancer</p>
-            </div>
-          </div>
-          </div>
+        <div class="name">
+          <h3>Jeremy H.</h3>
+          <p>Manager</p>
+        </div>
       </div>
-
-      <div class="chat">
-        <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-        <div class="triangle"></div>
-        <div class="facename">
-          <div class="face">
-            <img src="app/png/avatar.png" alt="avatar"/>
-          </div>
-          <div class="name">
-            <h3>Susan W.</h3>
-            <p>Photographer</p>
-          </div>
+      </div>
+  </div></div>
+    <div class="swiper-slide"><div class="chat">
+      <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+      <div class="triangle"></div>
+      <div class="facename">
+        <div class="face">
+          <img src="app/png/avatar.png" alt="avatar"/>
         </div>
+        <div class="name">
+          <h3>John S.</h3>
+          <p>Freelancer</p>
         </div>
-    </div>
+      </div>
+      </div>
+  </div></div>
+    <div class="swiper-slide"><div class="chat">
+      <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+      <div class="triangle"></div>
+      <div class="facename">
+        <div class="face">
+          <img src="app/png/avatar.png" alt="avatar"/>
+        </div>
+        <div class="name">
+          <h3>Susan W.</h3>
+          <p>Photographer</p>
+        </div>
+      </div>
+      </div>
+  </div></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
      </div>
-
     </section>
 
     <section id="contacts">
@@ -390,6 +399,8 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
