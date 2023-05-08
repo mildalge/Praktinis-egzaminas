@@ -1,6 +1,6 @@
 #reviews{
   background: $white;
-  height: 500px;;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -124,6 +124,7 @@
   @media (max-width:600px){
     #reviews{
       height: 500px;
+      height: 70vh;
       .saying-info{
         height: 40px;
         width: 90%;
