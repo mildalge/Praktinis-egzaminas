@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  // padding-bottom: 60px;
+  
   .swiper {
     width: 500px;
 
@@ -23,10 +23,7 @@
           display:flex;
           justify-content: center;
           align-items: center;
-          // gap:20px;
 
-          // width: 300px;
-          // height: 200px;
         }
         .text {
           width: 273px;
@@ -97,18 +94,11 @@
     }
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
-    text-shadow: 0 0 4px $black;
+    text-shadow: 0 0 4px $blue;
     transform: scale(1.1);
     }
   }
-    // background: $white;
-    // height: 420px;;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
-    // align-items: center;
-    // // padding-bottom: 60px;
-  
+ 
     .saying-info{
       display: flex;
       flex-direction: column;
@@ -160,6 +150,7 @@
           display: flex;
           align-items: center;
           height: 300px;
+          
           .swiper-slide{
             display: flex;
             justify-content: center;
@@ -169,10 +160,6 @@
               display:flex;
               justify-content: center;
               align-items: center;
-              // gap:20px;
-    
-              // width: 300px;
-              // height: 200px;
             }
             .text {
               width: 273px;
@@ -181,13 +168,6 @@
               color: $white;
               border: none;
               border-radius: 8px;
-        
-            //   p {
-            //     font-size: 16px;
-            //     padding: 20px;
-            //     line-height: 1.3;
-            //     text-align: left;
-            // }
         
             .triangle {
               // width: 0;
@@ -203,26 +183,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        
-            // .name{
-            //   display: flex;
-            //   flex-direction: column;
-            // }
-        
-        
-            // h3 {
-            //   margin-left: 15px;
-            //   margin-bottom: 4px;
-            //   font-weight: 100;
-            //   font-size: 20px;
-            //   color: $greydark;
-            // }
-        
-            // p {
-            //   color: $grey;
-            //   padding: 0px;
-            //   margin-left: 15px;
-            // }
           }
           }
         }
@@ -232,15 +192,13 @@
           color:$blue;
           padding: 20 0 0px;
           top:70%;
-          // right:10px;
         }
 
         .swiper-button-next:hover,
         .swiper-button-prev:hover {
-        text-shadow: 0 0 4px $black;
+        text-shadow: 0 0 4px $blue;
         transform: scale(1.1);
         }
-
       }
     }
   }
