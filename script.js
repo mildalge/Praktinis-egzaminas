@@ -46,6 +46,7 @@ window.addEventListener("scroll", function(){
 })
 
 
+
 // swiper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -68,3 +69,4 @@ const swiper = new Swiper('.swiper', {
     //         slidesPerView:3
     // }
   });
+

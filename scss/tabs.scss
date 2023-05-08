@@ -22,34 +22,32 @@
         gap:20px;
         width: 100px;
         height: 366px;
-  
-        #square{
-          display: flex;
-          justify-content: center;
+
+        button{
+          display: inline-block;
           align-items: center;
-          cursor: pointer;
+          background: $pink;
+          border: 1px solid $pink;
+          color: $white;
+          font-size: 14px;
           width: 100px;
           height: 100px;
-          display: flex;
-          background: $pink;
-          color: $white;
-          text-orientation:sideways 45;
+          padding: 20px 10px;
+          cursor: pointer;
           transition: 0.3s;
+
+          span{
+            display: inline-block;
+            transform: rotateZ(-45deg);
+          }
 
           &:hover{
             background: $pinkdark;
+            border: 1px solid $pinkdark;
             color: rgba(255, 255, 255, 0.42);
           }
-  
-          #square2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 64px;
-            height: 64px;
-            transform: rotate(-45deg)
-          }
         }
+
       }
   
       .text{
@@ -107,9 +105,9 @@
           width: 90%;
           margin-top: 20px;
 
-          #square{
-            height: 80px;
-            width: 80px;
+          button{
+            height: 90px;
+            width: 90px;
             }
         }
 
