@@ -3,7 +3,8 @@ const sideNav = document.querySelector(".side-nav")
 const links = document.getElementsByClassName("link")
 const anchors = document.querySelectorAll("a")
 const sections = document.querySelectorAll("section")
-
+const tabs = document.getElementsByClassName("tab")
+const buttons = document.getElementsByTagName("button")
 
 
 burger.addEventListener("click", function(){
@@ -47,18 +48,8 @@ window.addEventListener("scroll", function(){
 
 
 // TABAI
-const tabs = document.getElementsByClassName("tab")
-// const h1 = document.querySelector("h1")
-const buttons = document.getElementsByTagName("button")
-
-// for (let i = 0; i < tabs.length; i++) {
-//     // Paslepia visus tabus pradzioje
-//     tabs[i].style.display = "none"
-  
-// }
-
 tabs[0].style.display = "block"
-
+buttons[2].classList.add("selected")
 
 function showTab(event, id) {
     
@@ -70,31 +61,22 @@ function showTab(event, id) {
     }
     
     document.getElementById(id).style.display = "block"
-    
     event.currentTarget.classList.add("selected")
 }
 
 
 // SWIPER
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
-    // breakpoints:{
-    //     1000:{
-    //         slidesPerView:3
-    // }
   });
-
