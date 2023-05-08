@@ -142,7 +142,7 @@
           gap: 20px;
 
           .form__radio-label{
-            color:black;
+            color:$black;
           }
         }
 
@@ -163,7 +163,6 @@
         background-color: $green;
         }
         
- 
       button{
       background: $green;
       border: none;
