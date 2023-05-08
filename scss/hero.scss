@@ -73,6 +73,12 @@
           cursor: pointer;
           width: 135px;
           height: 42px;
+          transition: 0.3s;
+
+          &:hover{
+          border: 3px solid $green;
+          color: $green;
+          }
         }
       }
     
@@ -157,14 +163,20 @@
       button{
       background: $green;
       border: none;
-      border-radius: 5px;
+      border-radius: 0px 0px 5px 5px;
       color: $white;
       padding: 10px 20px;
       cursor: pointer;
       width: 360px;
       height: 56px;
       transition:0.3s;
-        
+
+      &:hover{
+        background: $white;
+        color: $green;
+        border: 2px solid $green;
+        font-size: 1.2em;
+        }
         }
       }
     }
