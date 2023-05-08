@@ -36,6 +36,7 @@
           cursor: pointer;
           transition: 0.3s;
 
+          
           span{
             display: inline-block;
             transform: rotateZ(-45deg);
@@ -46,12 +47,12 @@
             border: 1px solid $pink;
             color: $white;
           }
+        }
 
-          &.selected{
-            background: $pink;
-            border: 1px solid $pink;
-            color: $white;
-          }
+        button.selected{
+          background: $pink;
+          border: 1px solid $pink;
+          color: $white;
         }
 
       }
@@ -71,6 +72,10 @@
         padding-bottom: 22px;
         line-height: 1.3em;
         }
+
+        .tab {
+          display: none;
+        }
        }
       
       .fotos{
@@ -82,6 +87,13 @@
         img {
           width: 180px;
           height: 180px;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover{
+            opacity: 0.6;
+          }
+
           
         }
   
