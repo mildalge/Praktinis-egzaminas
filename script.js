@@ -46,8 +46,34 @@ window.addEventListener("scroll", function(){
 })
 
 
+// TABAI
+const tabs = document.getElementsByClassName("tab")
+// const h1 = document.querySelector("h1")
+const buttons = document.getElementsByTagName("button")
 
-// swiper
+for (let i = 0; i < tabs.length; i++) {
+    // Paslepia visus tabus pradzioje
+    tabs[i].style.display = "none"
+  
+}
+
+tabs[0].style.display = "block"
+
+
+function showTab(_event, id) {
+    
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none"
+        // buttons[i].classList.remove("selected")
+    }
+    
+    document.getElementById(id).style.display = "block"
+    
+    _event.currentTarget.classList.add("selected")
+}
+
+
+// SWIPER
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',

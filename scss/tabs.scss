@@ -26,9 +26,9 @@
         button{
           display: inline-block;
           align-items: center;
-          background: $pink;
-          border: 1px solid $pink;
-          color: $white;
+          background: $pinkdark;
+          border: 1px solid $pinkdark;
+          color: rgba(255, 255, 255, 0.42);
           font-size: 14px;
           width: 100px;
           height: 100px;
@@ -42,15 +42,21 @@
           }
 
           &:hover{
-            background: $pinkdark;
-            border: 1px solid $pinkdark;
-            color: rgba(255, 255, 255, 0.42);
+            background: $pink;
+            border: 1px solid $pink;
+            color: $white;
+          }
+
+          &.selected{
+            background: $pink;
+            border: 1px solid $pink;
+            color: $white;
           }
         }
 
       }
   
-      .text{
+      .tabs{
         display: flex;
         flex-direction: column;
         gap:20px;
@@ -111,7 +117,7 @@
             }
         }
 
-        .text{
+        .tabs{
           @include media;
           width: 90%;
           gap: 10px;
